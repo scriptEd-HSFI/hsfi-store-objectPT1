@@ -48,7 +48,8 @@ $( document ).ready(function() {
 // hint. You'll have you manipulate the places array
 ///////////////////////////////////////
 
-$(document).on('click', '.btn-like', function() {
+$(document).on('click', '.btn-like', function(e) {
+    e.preventDefault();
     var index = $(this).attr('data-id');
     alert('You just attempted to like Place #' + index);
     render();

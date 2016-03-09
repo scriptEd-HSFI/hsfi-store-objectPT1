@@ -50,7 +50,7 @@ $( document ).ready(function() {
 ///////////////////////////////////////
 
 $(document).on('click', '.btn-like', function() {
-    var idx = $(this).attr('data-id');
-    alert('You just attempted to like Place #' + idx)
+    var index = $(this).attr('data-id');
+    places[index].likes = places[index].likes + 1;
     render();
 });

@@ -51,6 +51,6 @@ $( document ).ready(function() {
 
 $(document).on('click', '.btn-like', function() {
     var index = $(this).attr('data-id');
-    alert('You just attempted to like Place #' + idx);
+    alert('You just attempted to like Place #' + index);
     render();
 });
